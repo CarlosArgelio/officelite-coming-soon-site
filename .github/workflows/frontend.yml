@@ -44,6 +44,7 @@ jobs:
         run: | 
           cd frontend
           npm run build
+          mv ./dist ./../.
           ls -al
       - name: Setup Pages
         uses: actions/configure-pages@v4
