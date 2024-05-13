@@ -4,7 +4,7 @@ export const Home = () => {
   return (
     <>
       <div className="grid grid-cols-1 gap-4 h-[100vh]">
-        <div className="absolute top-[-125px] grid place-content-center">
+        <div className="grid place-content-center md:place-content-start">
           <Banner />
         </div>
         {/* <div className="card">Pricing - Plan Basic</div>
