@@ -1,6 +1,7 @@
 import React from "react";
 import { useRoutes, HashRouter } from "react-router-dom";
 import { routes } from "./Routes";
+import { Header } from "./Components";
 
 const AppRoutes = () => {
   return useRoutes(routes);
@@ -9,6 +10,7 @@ const AppRoutes = () => {
 export const App = () => {
   return (
     <React.StrictMode>
+      <Header />
       <HashRouter>
         <AppRoutes />
       </HashRouter>
