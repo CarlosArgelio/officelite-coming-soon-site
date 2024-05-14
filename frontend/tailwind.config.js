@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        "brandeis-blue": "hsl(229, 100%, 66%)",
+        "brandeis-blue": "hsl(228, 100%, 66%)",
         "cornflower-blue": "hsl(228, 100%, 75%)",
         "prussian-blue": "hsl(229, 22%, 19%)",
         "sunset-orange": "hsl(0, 83%, 65%)",

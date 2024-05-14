@@ -1,4 +1,4 @@
-import { Banner } from "./Components";
+import { Banner, CardPriceContainer } from "./Components";
 
 export const Home = () => {
   return (
@@ -6,6 +6,9 @@ export const Home = () => {
       <div className="grid grid-cols-1 gap-4 h-[100vh]">
         <div className="grid place-content-center md:place-content-start">
           <Banner />
+        </div>
+        <div className="grid mx-10">
+          <CardPriceContainer />
         </div>
         {/* <div className="card">Pricing - Plan Basic</div>
         <div className="card">Pricing - Plan Pro</div>

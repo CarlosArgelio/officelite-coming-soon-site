@@ -5,7 +5,7 @@ const homeImg = svg.home;
 
 export const Banner = () => {
   return (
-    <div className="flex flex-col-reverse gap-28 md:flex-row md:mx-10 mb-24">
+    <div className="flex flex-col-reverse gap-28 md:flex-row md:mx-10 mb-28">
       <div className="text-center md:text-left md:w-[345px]">
         <div className="flex flex-col gap-6 mx-2 mb-5">
           <Title>A simple solution to complex tasks is coming soon</Title>
@@ -21,7 +21,7 @@ export const Banner = () => {
           </button>
         </div>
       </div>
-      <div>
+      <div className="m-16">
         <div className="absolute top-[-125px] md:top-0">
           <img src={homeImg["bg-pattern-header"]} alt="bg-pattern-header" />
         </div>
