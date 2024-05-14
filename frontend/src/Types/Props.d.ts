@@ -13,3 +13,8 @@ export interface CardPrice {
 export type CardHead = Pick<CardPrice, "title">;
 export type CardOffert = Pick<CardPrice, "offert" | "expecificationOffert">;
 export type CardDetail = Pick<CardPrice, "details" | "backgroud">;
+
+export interface Comming {
+  titleDate: string;
+  number: number;
+}

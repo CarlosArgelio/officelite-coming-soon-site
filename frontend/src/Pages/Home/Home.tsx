@@ -1,4 +1,4 @@
-import { Banner, CardPriceContainer, Footer } from "./Components";
+import { Banner, CardPriceContainer } from "./Components";
 
 export const Home = () => {
   return (
@@ -11,9 +11,9 @@ export const Home = () => {
           <div className="relative mx-10">
             <CardPriceContainer />
           </div>
-          <div className="absolute -z-10 top-[1600px] h-[1248px] w-full bg-charcoal text-white">
+          {/* <div className="absolute -z-10 top-[1600px] h-[1248px] w-full bg-prussian-blue text-white">
             <Footer />
-          </div>
+          </div> */}
         </div>
       </div>
     </>
