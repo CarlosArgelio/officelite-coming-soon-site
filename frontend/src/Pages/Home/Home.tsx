@@ -1,4 +1,4 @@
-import { Banner, CardPriceContainer } from "./Components";
+import { Banner, CardPriceContainer, Footer } from "./Components";
 
 export const Home = () => {
   return (
@@ -7,13 +7,14 @@ export const Home = () => {
         <div className="grid place-content-center md:place-content-start">
           <Banner />
         </div>
-        <div className="grid mx-10">
-          <CardPriceContainer />
+        <div className="container h-full">
+          <div className="relative mx-10">
+            <CardPriceContainer />
+          </div>
+          <div className="absolute -z-10 top-[1600px] h-[1248px] w-full bg-charcoal text-white">
+            <Footer />
+          </div>
         </div>
-        {/* <div className="card">Pricing - Plan Basic</div>
-        <div className="card">Pricing - Plan Pro</div>
-        <div className="card">Pricing - Plan Ultimate</div>
-        <div className="card">Footer</div> */}
       </div>
     </>
   );

@@ -1,0 +1,1 @@
+export { Commig } from "./Commig";
