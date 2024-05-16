@@ -7,6 +7,7 @@ export const Button: React.FC<ButtonCustom> = ({
   backgroud,
   textColor,
   to,
+  type,
 }) => {
   // 6. Agregar evento onSubmit
   // 6.1 Estado success
@@ -15,6 +16,7 @@ export const Button: React.FC<ButtonCustom> = ({
     <div className="h-14">
       <Link to={to}>
         <button
+          type={type}
           className={`${backgroud} ${textColor} font-bold text-base w-button-small h-full focus:outline-none focus:opacity-80 hover:opacity-80 active:opacity-70 rounded-full shadow-xl cursor-pointer`}
         >
           {children}

@@ -1,3 +1,9 @@
+import React from "react";
+
+export interface Button {
+  type?: "submit" | "reset" | "button" | undefined;
+}
+
 export interface TypoGraphy {
   children: string;
 }
@@ -33,6 +39,7 @@ export type CommingProp = Pick<
 export type childrenButtonNaming =
   | "Get Started"
   | "Try for Free"
+  | "Get on the list"
   | "Get on the list";
 export type backgroudButtonNaming =
   | "bg-royal-blue-opacity"
@@ -42,6 +49,7 @@ export type textColorButtonNaming = "text-white" | "text-brandeis-blue";
 export type LinkToString = "/sign-up";
 
 export interface ButtonCustom {
+  type?: Button["type"];
   children: childrenButtonNaming;
   backgroud: backgroudButtonNaming;
   textColor: textColorButtonNaming;
@@ -55,4 +63,11 @@ export interface FooterProp {
 
 export interface BannerProp {
   viewButton: boolean;
+}
+
+export interface InputProp {
+  type: string;
+  name: string;
+  placeholder: string;
+  error: string | boolean | undefined;
 }

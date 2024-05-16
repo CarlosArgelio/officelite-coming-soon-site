@@ -1,4 +1,4 @@
-import { Banner } from "./Components";
+import { Banner, RegisterUserForm } from "./Components";
 import { Commig, Footer } from "./../../Components";
 
 export const SignUp = () => {
@@ -19,7 +19,9 @@ export const SignUp = () => {
               textColor="text-charcoal opacity-80"
             />
           </div>
-          <div>Formulario</div>
+          <div>
+            <RegisterUserForm />
+          </div>
         </div>
         <Footer viewComming={false} heigth={320} />
       </div>
