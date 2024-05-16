@@ -25,7 +25,7 @@ export type childrenButtonNaming =
   | "Try for Free"
   | "Get on the list";
 export type backgroudButtonNaming =
-  | "bg-[#2A50E1]"
+  | "bg-royal-blue-opacity"
   | "bg-white"
   | "bg-brandeis-blue";
 export type textColorButtonNaming = "text-white" | "text-brandeis-blue";

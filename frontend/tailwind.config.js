@@ -11,6 +11,7 @@ export default {
       colors: {
         "brandeis-blue": "hsl(228, 100%, 66%)",
         "cornflower-blue": "hsl(228, 100%, 75%)",
+        "royal-blue-opacity": "rgba(81,117,255,0.15)",
         "prussian-blue": "hsl(229, 22%, 19%)",
         "sunset-orange": "hsl(0, 83%, 65%)",
         "slate-gray": "hsl(227, 13%, 52%)",

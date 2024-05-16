@@ -16,7 +16,7 @@ export const CardPriceContainer = () => {
         ]}
       >
         <Button
-          backgroud="bg-[#2A50E1]"
+          backgroud="bg-royal-blue-opacity"
           children="Try for Free"
           textColor="text-brandeis-blue"
           to="/sign-up"
@@ -48,7 +48,7 @@ export const CardPriceContainer = () => {
         details={["Robust work management", "100 GB storage", "VIP support"]}
       >
         <Button
-          backgroud="bg-[#2A50E1]"
+          backgroud="bg-royal-blue-opacity"
           children="Try for Free"
           textColor="text-brandeis-blue"
           to="/sign-up"
