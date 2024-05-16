@@ -6,9 +6,6 @@ export const Button: React.FC<ButtonCustom> = ({
   backgroud,
   textColor,
 }) => {
-  // 2. Crear estado de focus
-  // 3. Crear estado de hover
-  // 4. Crear estado de Select
   // 5. Agregar evento onNavigate
   // 6. Agregar evento onSubmit
   // 6.1 Estado success
@@ -16,7 +13,7 @@ export const Button: React.FC<ButtonCustom> = ({
   return (
     <div className="h-14">
       <button
-        className={`${backgroud} ${textColor} font-bold text-base w-button-small h-full rounded-full shadow-xl`}
+        className={`${backgroud} ${textColor} font-bold text-base w-button-small h-full focus:outline-none focus:opacity-80 hover:opacity-80 active:opacity-70 rounded-full shadow-xl cursor-pointer`}
       >
         {children}
       </button>
