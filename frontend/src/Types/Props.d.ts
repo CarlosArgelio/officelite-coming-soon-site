@@ -18,3 +18,19 @@ export interface Comming {
   titleDate: string;
   number: number;
 }
+
+export type childrenButtonNaming =
+  | "Get Started"
+  | "Try for Free"
+  | "Get on the list";
+export type backgroudButtonNaming =
+  | "bg-cornflower-blue"
+  | "bg-white"
+  | "bg-brandeis-blue";
+export type textColorButtonNaming = "text-white" | "text-brandeis-blue";
+
+export interface ButtonCustom {
+  children: childrenButtonNaming;
+  backgroud: backgroudButtonNaming;
+  textColor: textColorButtonNaming;
+}

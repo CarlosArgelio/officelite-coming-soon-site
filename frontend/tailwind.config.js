@@ -5,6 +5,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      width: {
+        "button-small": "171px",
+      },
       colors: {
         "brandeis-blue": "hsl(228, 100%, 66%)",
         "cornflower-blue": "hsl(228, 100%, 75%)",

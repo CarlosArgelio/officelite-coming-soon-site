@@ -1,5 +1,5 @@
 import { svg } from "./../../../../assets";
-import { Title, Text } from "./../../../../Components";
+import { Title, Text, Button } from "./../../../../Components";
 
 const homeImg = svg.home;
 
@@ -15,11 +15,11 @@ export const Banner = () => {
             intuitive interface to improve productivity.
           </Text>
         </div>
-        <div className="grid place-content-center md:place-content-start">
-          <button className="w-[100px] h-[48px] border border-y-blue-800 rounded-lg">
-            Get Starred
-          </button>
-        </div>
+        <Button
+          children="Get Started"
+          backgroud="bg-brandeis-blue"
+          textColor="text-white"
+        />
       </div>
       <div className="h-full">
         <div className="absolute h-full top-[-325px] md:top-0">
