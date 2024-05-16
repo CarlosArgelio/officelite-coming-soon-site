@@ -18,7 +18,17 @@ export type CardDetail = Pick<CardPrice, "details" | "backgroud">;
 export interface Comming {
   titleDate: string;
   number: number;
+  backgroud: BackgroudCommingProp;
+  numberColor: NumberColor;
+  textColor: TextColor;
 }
+export type BackgroudCommingProp = "bg-charcoal" | "bg-royal-blue-opacity";
+export type NumberColor = "text-white" | "text-brandeis-blue";
+export type TextColor = "text-white" | "text-charcoal opacity-80";
+export type CommingProp = Pick<
+  Comming,
+  "backgroud" | "numberColor" | "textColor"
+>;
 
 export type childrenButtonNaming =
   | "Get Started"
@@ -36,4 +46,13 @@ export interface ButtonCustom {
   backgroud: backgroudButtonNaming;
   textColor: textColorButtonNaming;
   to: LinkToString;
+}
+
+export interface FooterProp {
+  viewComming: boolean;
+  heigth: number;
+}
+
+export interface BannerProp {
+  viewButton: boolean;
 }

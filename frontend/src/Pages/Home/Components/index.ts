@@ -1,4 +1,4 @@
 export { Banner } from "./Banner";
 export { Card } from "./CardPrice";
 export { CardPriceContainer } from "./CardPriceContainer";
-export { Commig } from "./Coming";
+export { Commig } from "../../../Components/Coming";

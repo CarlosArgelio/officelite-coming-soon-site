@@ -1,4 +1,5 @@
 import { Banner, CardPriceContainer } from "./Components";
+import { Footer } from "./../../Components";
 
 export const Home = () => {
   return (
@@ -12,6 +13,7 @@ export const Home = () => {
             <CardPriceContainer />
           </div>
         </div>
+        <Footer viewComming={true} heigth={1248} />
       </div>
     </>
   );
