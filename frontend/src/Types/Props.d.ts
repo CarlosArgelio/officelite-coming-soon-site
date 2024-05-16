@@ -9,6 +9,7 @@ export interface CardPrice {
   offert: string;
   expecificationOffert: string;
   details: string[];
+  children: React.ReactNode;
 }
 export type CardHead = Pick<CardPrice, "title">;
 export type CardOffert = Pick<CardPrice, "offert" | "expecificationOffert">;
@@ -24,7 +25,7 @@ export type childrenButtonNaming =
   | "Try for Free"
   | "Get on the list";
 export type backgroudButtonNaming =
-  | "bg-cornflower-blue"
+  | "bg-[#2A50E1]"
   | "bg-white"
   | "bg-brandeis-blue";
 export type textColorButtonNaming = "text-white" | "text-brandeis-blue";

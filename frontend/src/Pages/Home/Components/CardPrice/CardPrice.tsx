@@ -25,6 +25,7 @@ export const Card: React.FC<CardPrice> = ({
   details,
   offert,
   expecificationOffert,
+  children,
 }) => {
   const isBrandeisBlue = backgroud === "bg-brandeis-blue";
 
@@ -42,11 +43,7 @@ export const Card: React.FC<CardPrice> = ({
       <CardHeader title={title} />
       <Offert offert={offert} expecificationOffert={expecificationOffert} />
       <Detail details={details} backgroud={backgroud} />
-      <div>
-        <button className="bg-white text-charcoal w-[100px] h-[48px] border border-y-blue-800 rounded-lg">
-          Try for Free
-        </button>
-      </div>
+      {children}
     </div>
   );
 };

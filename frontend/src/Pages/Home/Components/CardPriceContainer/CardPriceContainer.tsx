@@ -1,4 +1,5 @@
 import { Card } from "./../../Components";
+import { Button } from "./../../../../Components";
 
 export const CardPriceContainer = () => {
   return (
@@ -13,7 +14,14 @@ export const CardPriceContainer = () => {
           "2 GB storage",
           "Great security and support",
         ]}
-      />
+      >
+        <Button
+          backgroud="bg-[#2A50E1]"
+          children="Try for Free"
+          textColor="text-brandeis-blue"
+          to="/sign-up"
+        />
+      </Card>
       <Card
         backgroud="bg-brandeis-blue"
         title="Pro"
@@ -24,14 +32,28 @@ export const CardPriceContainer = () => {
           "50 GB storage",
           "More control and insights",
         ]}
-      />
+      >
+        <Button
+          backgroud="bg-white"
+          children="Try for Free"
+          textColor="text-brandeis-blue"
+          to="/sign-up"
+        />
+      </Card>
       <Card
         backgroud="bg-white"
         title="Ultimate"
         offert="$19.99"
         expecificationOffert="Per user, billed monthly"
         details={["Robust work management", "100 GB storage", "VIP support"]}
-      />
+      >
+        <Button
+          backgroud="bg-[#2A50E1]"
+          children="Try for Free"
+          textColor="text-brandeis-blue"
+          to="/sign-up"
+        />
+      </Card>
     </div>
   );
 };

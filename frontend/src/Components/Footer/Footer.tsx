@@ -1,4 +1,5 @@
 import { Commig } from "./../../Pages/Home/Components";
+import { Button } from "./../../Components";
 import { svg } from "./../../assets";
 
 const home = svg.home;
@@ -24,11 +25,14 @@ export const Footer = () => {
               <Commig />
             </div>
 
-            <div>
-              <button className="w-[100px] h-[48px] bg-brandeis-blue border border-y-blue-800 rounded-lg">
-                Get Starred
-              </button>
-            </div>
+            {/* <div> */}
+            <Button
+              backgroud="bg-brandeis-blue"
+              children="Get Started"
+              textColor="text-white"
+              to="/sign-up"
+            />
+            {/* </div> */}
           </div>
         </div>
       </div>

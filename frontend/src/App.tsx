@@ -10,11 +10,11 @@ const AppRoutes = () => {
 export const App = () => {
   return (
     <React.StrictMode>
-      <Header />
       <HashRouter>
+        <Header />
         <AppRoutes />
+        <Footer />
       </HashRouter>
-      <Footer />
     </React.StrictMode>
   );
 };
