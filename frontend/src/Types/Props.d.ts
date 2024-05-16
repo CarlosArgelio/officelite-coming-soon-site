@@ -28,9 +28,11 @@ export type backgroudButtonNaming =
   | "bg-white"
   | "bg-brandeis-blue";
 export type textColorButtonNaming = "text-white" | "text-brandeis-blue";
+export type LinkToString = "/sign-up";
 
 export interface ButtonCustom {
   children: childrenButtonNaming;
   backgroud: backgroudButtonNaming;
   textColor: textColorButtonNaming;
+  to: LinkToString;
 }

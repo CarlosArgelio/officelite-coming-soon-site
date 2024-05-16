@@ -19,6 +19,7 @@ export const Banner = () => {
           children="Get Started"
           backgroud="bg-brandeis-blue"
           textColor="text-white"
+          to="/sign-up"
         />
       </div>
       <div className="h-full">
