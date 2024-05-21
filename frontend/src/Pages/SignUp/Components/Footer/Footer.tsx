@@ -8,7 +8,7 @@ const home = svg.home;
 export const Footer: React.FC<FooterProp> = ({ viewComming, heigth }) => {
   return (
     <footer
-      className={`absolute -z-10 top-[850px] h-[${heigth}px] w-full bg-prussian-blue text-white`}
+      className={`absolute -z-10 top-[850px] md:top-[950px] h-[${heigth}px] w-full bg-prussian-blue text-white`}
     >
       <div className="h-full">
         <div className="h-full border border-red-600">

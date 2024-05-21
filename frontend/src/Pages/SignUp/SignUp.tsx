@@ -13,7 +13,7 @@ export const SignUp = () => {
             coming <span className="text-brandeis-blue">4 nov 2020</span>
           </p>
 
-          <div>
+          <div className="md:mb-24">
             <Commig
               backgroud="bg-royal-blue-opacity"
               numberColor="text-brandeis-blue"
