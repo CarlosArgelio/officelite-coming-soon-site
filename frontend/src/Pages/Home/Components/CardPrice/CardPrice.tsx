@@ -31,7 +31,7 @@ export const Card: React.FC<CardPrice> = ({
 
   return (
     <div
-      className={`${backgroud} ${styles[backgroud].primary} md:relative flex flex-col text-center md:text-left p-4 w-full h-[500px] rounded-2xl drop-shadow-lg md:h-80`}
+      className={`${backgroud} ${styles[backgroud].primary} md:relative flex flex-col text-center md:text-left xl:text-center xl:gap-10 p-4 w-full h-[500px] rounded-2xl drop-shadow-lg md:h-80 xl:h-[500px]`}
     >
       {isBrandeisBlue && (
         <img
@@ -67,12 +67,12 @@ const Offert: React.FC<CardOffert> = ({ offert, expecificationOffert }) => {
 
 const Detail: React.FC<CardDetail> = ({ details, backgroud }) => {
   return (
-    <div className="md:absolute md:right-6 md:top-28">
-      <ul className="mb-6 md:mb-2 md:text-right">
+    <div className="md:absolute md:right-6 md:top-28 xl:static xl:flex xl:justify-center">
+      <ul className="mb-6 md:mb-2 md:text-right xl:text-center">
         {details.map((detail, index) => (
           <li
             key={index}
-            className={`font-light ${styles[backgroud].primary} mb-4 md:mb-1`}
+            className={`font-light ${styles[backgroud].primary} mb-4 md:mb-1 xl:mb-2`}
           >
             {detail}
           </li>

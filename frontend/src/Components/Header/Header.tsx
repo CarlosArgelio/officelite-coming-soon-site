@@ -4,8 +4,8 @@ const { logo } = svg;
 
 export const Header = () => {
   return (
-    <div className="grid place-content-center p-12 md:place-content-start">
+    <header className="grid place-content-center p-12 md:place-content-start lg:ml-40">
       <img src={logo} alt="Logo Offcelite" />
-    </div>
+    </header>
   );
 };
