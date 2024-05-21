@@ -31,7 +31,7 @@ export const Card: React.FC<CardPrice> = ({
 
   return (
     <div
-      className={`${backgroud} ${styles[backgroud].primary} flex flex-col text-center p-4 w-full h-[500px] rounded-2xl drop-shadow-lg`}
+      className={`${backgroud} ${styles[backgroud].primary} md:relative flex flex-col text-center md:text-left p-4 w-full h-[500px] rounded-2xl drop-shadow-lg md:h-80`}
     >
       {isBrandeisBlue && (
         <img
@@ -49,12 +49,16 @@ export const Card: React.FC<CardPrice> = ({
 };
 
 const CardHeader: React.FC<CardHead> = ({ title }) => {
-  return <div className="font-bold text-xl leading-7 mt-8 mb-14">{title}</div>;
+  return (
+    <div className="font-bold text-xl leading-7 mt-8 mb-14 md:mt-0 md:mb-5 md:p-4">
+      {title}
+    </div>
+  );
 };
 
 const Offert: React.FC<CardOffert> = ({ offert, expecificationOffert }) => {
   return (
-    <div className="mb-14">
+    <div className="mb-14 md:mb-5">
       <div className="font-bold text-6xl leading-7 mb-7">{offert}</div>
       <p className="font-medium">{expecificationOffert}</p>
     </div>
@@ -63,15 +67,17 @@ const Offert: React.FC<CardOffert> = ({ offert, expecificationOffert }) => {
 
 const Detail: React.FC<CardDetail> = ({ details, backgroud }) => {
   return (
-    <ul className="mb-6">
-      {details.map((detail, index) => (
-        <li
-          key={index}
-          className={`font-light ${styles[backgroud].primary} mb-4`}
-        >
-          {detail}
-        </li>
-      ))}
-    </ul>
+    <div className="md:absolute md:right-6 md:top-28">
+      <ul className="mb-6 md:mb-2 md:text-right">
+        {details.map((detail, index) => (
+          <li
+            key={index}
+            className={`font-light ${styles[backgroud].primary} mb-4 md:mb-1`}
+          >
+            {detail}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };

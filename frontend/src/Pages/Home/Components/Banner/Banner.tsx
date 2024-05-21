@@ -32,7 +32,7 @@ export const Banner = () => {
         </div>
         <div className="flex items-center justify-center top-1 w-full">
           <img
-            className="absolute top-36 w-[171px] h-[192px] md:w-[281px] md:h-[314px]"
+            className="absolute top-36 w-[171px] h-[192px] md:w-[281px] md:h-[314px] md:right-2"
             src={homeImg["illustration-charts"]}
             alt="illustration-charts"
           />

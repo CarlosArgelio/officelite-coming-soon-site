@@ -3,7 +3,7 @@ import { Button } from "./../../../../Components";
 
 export const CardPriceContainer = () => {
   return (
-    <div className="grid gap-8">
+    <div className="grid content-center gap-8">
       <Card
         backgroud="bg-white"
         title="Basic"

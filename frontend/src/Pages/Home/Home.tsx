@@ -13,7 +13,7 @@ export const Home = () => {
             <CardPriceContainer />
           </div>
         </div>
-        <Footer viewComming={true} heigth={1248} />
+        <Footer viewComming={true} />
       </div>
     </>
   );

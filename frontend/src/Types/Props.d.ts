@@ -58,7 +58,7 @@ export interface ButtonCustom {
 
 export interface FooterProp {
   viewComming: boolean;
-  heigth: number;
+  heigth?: number;
 }
 
 export interface BannerProp {
