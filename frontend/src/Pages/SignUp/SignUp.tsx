@@ -1,5 +1,6 @@
 import { Banner, RegisterUserForm } from "./Components";
-import { Commig, Footer } from "./../../Components";
+import { Commig } from "./../../Components";
+import { Footer } from "./Components";
 
 export const SignUp = () => {
   return (
@@ -7,7 +8,7 @@ export const SignUp = () => {
       <div className="flex flex-col">
         <Banner viewButton={false} />
 
-        <div className="flex flex-col items-center justify-center gap-6">
+        <div className="flex flex-col items-center justify-center gap-6 h-full">
           <p className="uppercase font-bold tracking-widest">
             coming <span className="text-brandeis-blue">4 nov 2020</span>
           </p>
@@ -22,8 +23,10 @@ export const SignUp = () => {
           <div>
             <RegisterUserForm />
           </div>
+          <div className="w-full h-full">
+            <Footer viewComming={false} heigth={320} />
+          </div>
         </div>
-        <Footer viewComming={false} heigth={320} />
       </div>
     </div>
   );
